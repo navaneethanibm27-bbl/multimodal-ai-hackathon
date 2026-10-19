@@ -1,0 +1,191 @@
+{
+  "CAD": {
+    "target": "CAD",
+    "accuracy": 0.8525,
+    "precision": 0.8525,
+    "recall": 1.0,
+    "f1_score": 0.9204,
+    "roc_auc": 0.7222,
+    "brier_score": 0.1205,
+    "confusion_matrix": {
+      "true_negatives": 0,
+      "false_positives": 9,
+      "false_negatives": 0,
+      "true_positives": 52,
+      "matrix": [
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          52
+        ]
+      ]
+    },
+    "sample_counts": {
+      "train_samples": 242,
+      "test_samples": 61,
+      "total_samples": 303,
+      "positive_class_count": 52,
+      "negative_class_count": 9,
+      "prevalence": 0.8525
+    },
+    "calibration_curve": [
+      {
+        "bin": 1,
+        "predicted": 0.789,
+        "observed": 0.667
+      },
+      {
+        "bin": 2,
+        "predicted": 0.859,
+        "observed": 0.873
+      }
+    ],
+    "evaluation_strategy": "Stratified 80/20 Train/Test Split with 5-Fold Stratified Cross-Validation"
+  },
+  "LAD": {
+    "target": "LAD",
+    "accuracy": 0.6885,
+    "precision": 0.7,
+    "recall": 0.9767,
+    "f1_score": 0.8155,
+    "roc_auc": 0.6085,
+    "brier_score": 0.199,
+    "confusion_matrix": {
+      "true_negatives": 0,
+      "false_positives": 18,
+      "false_negatives": 1,
+      "true_positives": 42,
+      "matrix": [
+        [
+          0,
+          18
+        ],
+        [
+          1,
+          42
+        ]
+      ]
+    },
+    "sample_counts": {
+      "train_samples": 242,
+      "test_samples": 61,
+      "total_samples": 303,
+      "positive_class_count": 43,
+      "negative_class_count": 18,
+      "prevalence": 0.7049
+    },
+    "calibration_curve": [
+      {
+        "bin": 1,
+        "predicted": 0.537,
+        "observed": 0.6
+      },
+      {
+        "bin": 2,
+        "predicted": 0.716,
+        "observed": 0.738
+      },
+      {
+        "bin": 3,
+        "predicted": 0.812,
+        "observed": 0.643
+      }
+    ],
+    "evaluation_strategy": "Stratified 80/20 Train/Test Split with 5-Fold Stratified Cross-Validation"
+  },
+  "LCX": {
+    "target": "LCX",
+    "accuracy": 0.5082,
+    "precision": 0.3333,
+    "recall": 0.0714,
+    "f1_score": 0.1176,
+    "roc_auc": 0.4827,
+    "brier_score": 0.2508,
+    "confusion_matrix": {
+      "true_negatives": 29,
+      "false_positives": 4,
+      "false_negatives": 26,
+      "true_positives": 2,
+      "matrix": [
+        [
+          29,
+          4
+        ],
+        [
+          26,
+          2
+        ]
+      ]
+    },
+    "sample_counts": {
+      "train_samples": 242,
+      "test_samples": 61,
+      "total_samples": 303,
+      "positive_class_count": 28,
+      "negative_class_count": 33,
+      "prevalence": 0.459
+    },
+    "calibration_curve": [
+      {
+        "bin": 1,
+        "predicted": 0.397,
+        "observed": 1.0
+      },
+      {
+        "bin": 2,
+        "predicted": 0.459,
+        "observed": 0.45
+      }
+    ],
+    "evaluation_strategy": "Stratified 80/20 Train/Test Split with 5-Fold Stratified Cross-Validation"
+  },
+  "RCA": {
+    "target": "RCA",
+    "accuracy": 0.5902,
+    "precision": 0.5833,
+    "recall": 1.0,
+    "f1_score": 0.7368,
+    "roc_auc": 0.5176,
+    "brier_score": 0.2434,
+    "confusion_matrix": {
+      "true_negatives": 1,
+      "false_positives": 25,
+      "false_negatives": 0,
+      "true_positives": 35,
+      "matrix": [
+        [
+          1,
+          25
+        ],
+        [
+          0,
+          35
+        ]
+      ]
+    },
+    "sample_counts": {
+      "train_samples": 242,
+      "test_samples": 61,
+      "total_samples": 303,
+      "positive_class_count": 35,
+      "negative_class_count": 26,
+      "prevalence": 0.5738
+    },
+    "calibration_curve": [
+      {
+        "bin": 1,
+        "predicted": 0.569,
+        "observed": 0.604
+      },
+      {
+        "bin": 2,
+        "predicted": 0.627,
+        "observed": 0.462
+      }
+    ],
+    "evaluation_strategy": "Stratified 80/20 Train/Test Split with 5-Fold Stratified Cross-Validation"
+  }
+}

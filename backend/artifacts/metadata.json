@@ -1,0 +1,108 @@
+{
+  "project": "CardioVision AI",
+  "version": "1.0.0",
+  "trained_at": "2026-10-14T21:41:57.333763+00:00",
+  "dataset_source": "Z-Alizadeh Sani Clinical Dataset",
+  "is_synthetic_dataset": false,
+  "total_patients": 303,
+  "targets": [
+    "CAD",
+    "LAD",
+    "LCX",
+    "RCA"
+  ],
+  "model_architecture": "Calibrated Random Forest (5-Fold Platt Scaling, 100 Trees, Balanced Class Weighting)",
+  "features": {
+    "numerical": [
+      "Age",
+      "Weight",
+      "Length",
+      "BMI",
+      "BP",
+      "PR",
+      "FBS",
+      "CR",
+      "TG",
+      "LDL",
+      "HDL",
+      "BUN",
+      "ESR",
+      "HB",
+      "K",
+      "Na",
+      "WBC",
+      "Lymph",
+      "Neut",
+      "PLT",
+      "EF_TTE"
+    ],
+    "categorical": [
+      "Sex",
+      "DM",
+      "HTN",
+      "Current_Smoker",
+      "Ex_Smoker",
+      "FH",
+      "Obesity",
+      "CRF",
+      "CVA",
+      "Airway_disease",
+      "Thyroid_Disease",
+      "CHF",
+      "DLP",
+      "Edema",
+      "Weak_Peripheral_Pulse",
+      "Lung_Rales",
+      "Systolic_Murmur",
+      "Diastolic_Murmur",
+      "Typical_Chest_Pain",
+      "Atypical_Chest_Pain",
+      "Nonanginal_Chest_Pain",
+      "Exertional_CP",
+      "LowTH_Angina",
+      "Q_Wave",
+      "St_Elevation",
+      "St_Depression",
+      "Tinversion",
+      "LVH",
+      "Poor_R_Progression",
+      "Region_RWMA",
+      "VHD"
+    ],
+    "total_count": 52
+  },
+  "target_summaries": {
+    "CAD": {
+      "model_file": "cad_model.joblib",
+      "rf_file": "cad_rf.joblib",
+      "accuracy": 0.8525,
+      "f1_score": 0.9204,
+      "roc_auc": 0.7222,
+      "brier_score": 0.1205
+    },
+    "LAD": {
+      "model_file": "lad_model.joblib",
+      "rf_file": "lad_rf.joblib",
+      "accuracy": 0.6885,
+      "f1_score": 0.8155,
+      "roc_auc": 0.6085,
+      "brier_score": 0.199
+    },
+    "LCX": {
+      "model_file": "lcx_model.joblib",
+      "rf_file": "lcx_rf.joblib",
+      "accuracy": 0.5082,
+      "f1_score": 0.1176,
+      "roc_auc": 0.4827,
+      "brier_score": 0.2508
+    },
+    "RCA": {
+      "model_file": "rca_model.joblib",
+      "rf_file": "rca_rf.joblib",
+      "accuracy": 0.5902,
+      "f1_score": 0.7368,
+      "roc_auc": 0.5176,
+      "brier_score": 0.2434
+    }
+  }
+}
